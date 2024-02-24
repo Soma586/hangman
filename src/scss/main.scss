@@ -12,6 +12,8 @@ $darkgrey: #737373;
 $grey: #D9D9D9;
 $lightgrey: #FAFAFA;
 $red: #FF3939;
+$blue: #2463FF;
+$darknavy: #261676;
 
 $custom-theme-colors: (
     
@@ -19,12 +21,14 @@ $custom-theme-colors: (
 "purple": $purple,
 'lightpurple' : $lightpurple, 
 "dark": $dark ,
-"darkgrey" : $darkgray,
+"darkgrey" : $darkgrey,
 "grey" : $grey,
 "lightgrey": $lightgrey,
 "red" : $red,
 "white": $white,
 "black" : $black,
+'darknavy': $darknavy,
+'blue' : $blue
 
 );
 

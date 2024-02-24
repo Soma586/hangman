@@ -1,0 +1,53 @@
+
+
+
+.tutorialTitle {
+
+    font-family: 'MouseMemoirs' ;
+    font-size: 136px;
+    -webkit-text-stroke: 6px black;
+
+
+    //background-image: ;
+    background-image: linear-gradient(blue, white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.card {
+
+
+    width: 384px;
+    height: 550px;
+
+    font-family: 'MouseMemoirs' ;
+    border-radius: 16px;
+
+    text-align: center;
+    padding: 70px 30px;
+}
+
+
+.number {
+
+    font-size: 88px;
+    line-height: 106px;
+
+}
+
+
+.cardTitle {
+    font-size: 48px;
+    line-height: 58px;
+
+}
+
+
+.desc {
+
+    font-size : 26px;
+    line-height: 31px;
+    color: #887DC0
+
+}

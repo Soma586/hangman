@@ -1,0 +1,51 @@
+
+
+
+.outerBox {
+
+    /* //position :'relative'; */
+    /* //position: absolute; */
+    background-color: red;
+    width: 592px;
+    max-height: 610px;
+    padding-top: 50px;
+    margin: auto;
+  
+  
+  } 
+
+
+
+  .innerBox {
+
+  
+    background-color: green;
+    border-radius:  40px;
+    width: 592px;
+    height: 500px;
+    /* margin: auto; */
+    /* align-items: center; */
+    /* //align-content: center; */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* //align-items: center; */
+  
+    display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+  }
+  
+  
+  .boxButton {
+  
+  
+    width: 260px;
+    height: 62px;
+    border-radius: 28px;
+    font-family: 'MouseMemoirs';
+    font-size: 32px;
+  
+  }
+  
+
