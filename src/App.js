@@ -6,6 +6,7 @@ import Menu from './assets/images/icon-menu.svg'
 import PlayButton from './assets/images/icon-play.svg'
 import Intro from './components/Intro/index.tsx';
 import Tutorial from './components/tutorial/index.tsx';
+import Category from './components/Category/index.tsx'
 //import classnames
 
 function App() {
@@ -39,7 +40,8 @@ function App() {
       </div> */}
 
       {/* <Intro/> */}
-      <Tutorial/>
+      {/* <Tutorial/> */}
+      <Category/>
      
       
     </div>
