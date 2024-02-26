@@ -1,0 +1,103 @@
+
+
+
+.keyBoardTile {
+
+
+
+    width : 74px;
+    height: 74px;
+
+    font-family: 'MouseMemoirs';
+    border-radius: 20px;
+    background-color: white;
+    text-align: center;
+    //opacity: 0.5;
+
+
+    &:hover {
+
+        background-color: blue;
+        color: white;
+    }
+
+}
+
+
+
+.keyDisabled {
+
+    
+    width : 74px;
+    height: 74px;
+
+    font-family: 'MouseMemoirs';
+    border-radius: 20px;
+    background-color: white;
+    text-align: center;
+    opacity: 0.5;
+
+
+
+}
+
+.keyDisabled p {
+    font-size: 48px;
+    line-height: 58px;
+}
+
+
+
+
+
+.keyBoardTile p {
+
+    font-size: 48px;
+    line-height: 58px;
+}
+
+
+.keyBoardGrid {
+
+
+    display: grid;
+    padding: 0px 120px;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 10px;
+
+}
+
+
+.wordGrid {
+
+    display: grid;
+    padding : 0px 50px;
+    grid-template-columns : repeat(8, 1fr);
+    grid-template-rows: repeat((3, 1fr));
+}
+
+
+
+.wordTile {
+
+
+    width : 112px;
+    height : 128px;
+    background-color: red;
+    border-radius: 20px;
+
+
+    p {
+        font-size: 48px;
+        line-height: 58px;
+    }
+}
+
+.emptyTile {
+
+    width : 112px;
+    height : 128px;
+    //background-color: green;
+}

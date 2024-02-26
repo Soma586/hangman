@@ -1,6 +1,7 @@
 import './styles.scss'
 import _ from 'lodash'
 import Back from '../../assets/images/icon-back.svg'
+import {Link} from 'react-router-dom'
 
 
 
@@ -63,7 +64,13 @@ const Tutorial = () => {
         <div className="container">
 
             <div className="d-flex justify-content-between">
+
+<div>
+<Link to="/">
                 <img src ={Back}/>
+                </Link>
+</div>
+               
             <h1 className="tutorialTitle">How to Play</h1>
             <div></div>
             </div>

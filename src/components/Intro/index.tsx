@@ -2,7 +2,7 @@ import Icon from '../../assets/images/logo.svg'
 import Menu from '../assets/images/icon-menu.svg'
 import PlayButton from '../../assets/images/icon-play.svg'
 //import Ico from '../../'
-
+import { Link } from 'react-router-dom'
 
 
 
@@ -16,9 +16,12 @@ const Intro = () => {
         <div className="outerBox">
 
         <div className="innerBox">
-
+       
           <div>
-          <img src={Icon}/>
+
+           
+                <img src={Icon}/>
+          
 
           </div>
          
@@ -27,8 +30,10 @@ const Intro = () => {
          <img src={PlayButton}/>
          </div>
           
-          <button className="boxButton bg-blue text-white">HOW TO PLAY</button>
 
+          <Link to="/tutorial">
+          <button className="boxButton bg-blue text-white">HOW TO PLAY</button>
+          </Link>
         </div>
 
       </div>
