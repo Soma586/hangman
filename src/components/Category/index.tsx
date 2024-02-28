@@ -15,8 +15,20 @@ interface CardTypesProps {
 const CardType = ({type} : CardTypesProps) => {
 
 
+    let map = new Map()
+
+
+    map.set("Movies", '/category/movies')
+    map.set("TV Shows", '/category/shows')
+    map.set('Countries', '/category/countries')
+    map.set('Captial Cities', '/category/cities')
+    map.set('Animals', '/category/animals')
+    map.set('Sports', '/category/sports')
+
 
     return ( 
+
+        <Link to={map.get(type)}>
         <div className="categoryType bg-blue">
 
 
@@ -24,12 +36,14 @@ const CardType = ({type} : CardTypesProps) => {
 
 
         </div>
+        </Link>
     )
 }
 
 const Category = () => {
 
-
+//should each categoy be it's own route? the most simple ways i can think about it
+//the route will dynamically change, i would need to do more research on how to solve this
     const x = Object.keys(Data.categories)
 
     const displayType = _.map(x, (item) => {

@@ -1,0 +1,46 @@
+@import '../../scss/main.scss';
+
+
+.menuButton {
+
+
+    padding : 5px 35px;
+    font-family: "MouseMemoirs";
+    background-color: $blue;
+    border: none;
+    font-size: 32px;
+    border-radius: 20px;
+
+}
+
+
+.modalTitle {
+
+
+    font-family: 'MouseMemoirs' ;
+    font-size: 134px;
+    -webkit-text-stroke: 6px black;
+
+
+    //background-image: ;
+    background-image: linear-gradient(blue, white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.modal-body-extra {
+
+
+    //align-content: center;
+    align-items: center;
+    background-color: pink;
+    height: 500px;
+
+    display: flex;
+    //border-radius: 20px;
+
+    flex-direction: column;
+
+
+}

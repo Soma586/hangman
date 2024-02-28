@@ -27,7 +27,9 @@ const Intro = () => {
          
 
          <div>
+             <Link to="/category">
          <img src={PlayButton}/>
+         </Link>
          </div>
           
 
