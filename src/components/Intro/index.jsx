@@ -1,4 +1,5 @@
 import Icon from '../../assets/images/logo.svg'
+import './styles.scss'
 
 import PlayButton from '../../assets/images/icon-play.svg'
 //import Ico from '../../'
