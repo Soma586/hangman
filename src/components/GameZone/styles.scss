@@ -1,18 +1,37 @@
+@import '../../scss/breakpoint.scss';
+@import '../../scss/main.scss';
 
 
+
+.buffer {
+
+
+    margin-top: 0px;
+
+    @include breakpoint-lg {
+        margin-top: 10px;
+    }
+}
 
 .keyBoardTile {
 
 
 
-    width : 74px;
-    height: 74px;
+    width : 28px;
+    height: 56px;
 
     font-family: 'MouseMemoirs';
     border-radius: 20px;
     background-color: white;
     text-align: center;
+    border: none;
     //opacity: 0.5;
+
+    @include breakpoint-lg {
+
+        width : 74px;
+        height : 74px;
+    }
 
 
     &:hover {
@@ -21,51 +40,161 @@
         color: white;
     }
 
+
+    p {
+        font-size: 24px;
+        line-height: 36px;
+        margin-top: 5px;
+
+        @include breakpoint-lg {
+        font-size: 48px;
+        line-height: 58px; 
+        }
+    }
 }
 
+
+
+.title {
+
+font-size : 24px;
+
+    @include breakpoint-lg {
+
+        font-size: 40px;
+    }
+}
+
+
+.healthBarCapsule {
+
+
+
+
+    background-color: pink;
+    border-radius: 20px;
+    width: 160px;
+    height : 20px;
+    padding: 4px;
+
+
+
+    @include breakpoint-lg {
+
+        width: 190px;
+    }
+}
+
+.heart {
+
+    width : 20px;
+
+
+
+    @include breakpoint-lg {
+
+        width: 30px;
+    }
+}
+
+.healthBar {
+
+    background-color: red;
+    //width: 100px;
+    height: 10px;
+    border-radius: 20px;
+    //min-width: 100px;
+    //position: relative;
+    transition: width 1s ease-out;
+}
+
+.bbb {
+
+    width: 100px;
+    height : 100px;
+    background-color: green;
+}
+
+// .healthBar::before {
+//     content: ""; /* Required for pseudo-element */
+//     position: absolute; /* Position the pseudo-element */
+//     top: 0;
+//     left: 0;
+//     width: 100%; /* Occupy entire width */
+//     height: 100%; /* Occupy entire height */
+//     background-color: red;
+// }
 
 
 .keyDisabled {
 
     
-    width : 74px;
-    height: 74px;
+    
+    width : 28px;
+    height: 56px;
 
     font-family: 'MouseMemoirs';
     border-radius: 20px;
     background-color: white;
     text-align: center;
     opacity: 0.5;
+    border: none;
 
 
+
+    @include breakpoint-lg {
+
+        width : 74px;
+        height : 74px;
+    }
+
+
+    p {
+
+        
+        font-size: 24px;
+        line-height: 36px;
+
+        @include breakpoint-lg {
+        font-size: 48px;
+        line-height: 58px; 
+        }
+    }
 
 }
 
-.keyDisabled p {
-    font-size: 48px;
-    line-height: 58px;
-}
+// .keyDisabled p {
+//     font-size: 48px;
+//     line-height: 58px;
+// }
 
 
 
 
 
-.keyBoardTile p {
+// .keyBoardTile p {
 
-    font-size: 48px;
-    line-height: 58px;
-}
+//     font-size: 48px;
+//     line-height: 58px;
+// }
 
 
 .keyBoardGrid {
 
 
+    margin-top: 10px;
     display: grid;
-    padding: 0px 120px;
+    padding: 0px 10px;
     grid-template-columns: repeat(9, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 10px;
+
+
+    @include breakpoint-lg {
+
+        padding : 0px 120px;
+    }
 
 }
 
@@ -76,6 +205,7 @@
     padding : 0px 50px;
     grid-template-columns : repeat(8, 1fr);
     grid-template-rows: repeat((3, 1fr));
+    grid-row-gap: 10px;
 }
 
 
@@ -83,21 +213,45 @@
 .wordTile {
 
 
-    width : 112px;
-    height : 128px;
-    background-color: red;
-    border-radius: 20px;
+    width : 40px;
+    height : 66px;
+    background-color: $blue;
+    border-radius: 10px;
 
+    display: flex;
+    justify-content: center ;
+
+
+    @include breakpoint-lg {
+
+        width : 112px;
+        height : 128px;
+        border-radius: 20px;
+    }
 
     p {
+
+        color: white;
+        font-size: 24px;
+        line-height: 48px;
+        margin-top: 10px;
+        @include breakpoint-lg {
         font-size: 48px;
         line-height: 58px;
+        margin-top: 30px;
+        }
     }
 }
 
 .emptyTile {
 
+
+    width : 40px;
+    height : 66px;
+
+    @include breakpoint-lg {
     width : 112px;
     height : 128px;
+    }
     //background-color: green;
 }

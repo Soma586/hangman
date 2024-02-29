@@ -14,7 +14,7 @@ import Data from './data.json'
 
 function App() {
   return (
-    <div className="containerz" >
+    <div className="containerz pt-2" >
 
       {/* <image src={BackGround}>
 

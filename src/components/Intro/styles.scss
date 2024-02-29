@@ -1,11 +1,11 @@
-
+@import '../../scss/breakpoint.scss';
 
 
 .outerBox {
 
     /* //position :'relative'; */
     /* //position: absolute; */
-    background-color: red;
+    //background-color: red;
     width: 592px;
     max-height: 610px;
     padding-top: 50px;
@@ -19,7 +19,7 @@
   .innerBox {
 
   
-    background-color: green;
+    background-color: pink;
     border-radius:  40px;
     width: 592px;
     height: 500px;
@@ -39,12 +39,13 @@
   
   .boxButton {
   
-  
+    border: none !important;
     width: 260px;
     height: 62px;
     border-radius: 28px;
     font-family: 'MouseMemoirs';
     font-size: 32px;
+   
   
   }
   

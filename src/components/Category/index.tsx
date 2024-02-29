@@ -2,7 +2,8 @@ import Data from '../../data.json'
 import _ from 'lodash'
 import './styles.scss'
 import {Link} from 'react-router-dom'
-
+import Back from '../../assets/images/icon-back.svg'
+import { Nav } from '../tutorial/index.tsx'
 
 
 
@@ -54,12 +55,29 @@ const Category = () => {
 
     return (
         <div className="container">
-            <h1>Pick a Category</h1>
+
+{/*             
+            <div className="d">
+                <div>
+                    <Link to="/">
+                    <img src={Back}/>
+                    </Link>
+                </div>
+
+
+                <h1>Pick a Category</h1>
+
+                <div className="d-none dlg-block">
+
+                </div>
+            </div> */}
+            <Nav title="Pick a Category"/>
+            
 
 
 
 
-            <div className="d-flex flex-wrap justify-content-between">
+            <div className="d-lg-flex flex-wrap justify-content-lg-between">
 
             {displayType}
             </div>

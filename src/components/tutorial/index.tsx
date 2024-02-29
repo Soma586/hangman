@@ -13,6 +13,25 @@ interface CardProps {
 }
 
 
+
+export const Nav = ({title}) => {
+
+
+    return (
+        <div className="d-flex justify-content-between">
+
+        <div>
+        <Link to="/">
+                        <img src ={Back}/>
+                        </Link>
+        </div>
+                       
+                    <h1 className="tutorialTitle">{title}</h1>
+                    <div className="d-none d-lg-block"></div>
+                    </div>
+    )
+}
+
 const Card = ({title, id, desc}: CardProps) => {
 
 
@@ -60,24 +79,16 @@ const Tutorial = () => {
     })
 
 
+
+
+
     return (
         <div className="container">
 
-            <div className="d-flex justify-content-between">
-
-<div>
-<Link to="/">
-                <img src ={Back}/>
-                </Link>
-</div>
-               
-            <h1 className="tutorialTitle">How to Play</h1>
-            <div></div>
-            </div>
-           
+       <Nav title={"How To Play"}/>
 
 
-            <div className="d-flex justify-content-between">
+            <div className="d-lg-flex justify-content-lg-between">
 
                 {displayCards}
             </div>

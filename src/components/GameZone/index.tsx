@@ -77,7 +77,7 @@ const GameZone = ({type,data}) => {
 
         
 
-        console.log(data)
+        //console.log(data)
         
         const randomWordObj: String = data[Math.floor(Math.random() * data.length)]
     
@@ -109,6 +109,8 @@ const GameZone = ({type,data}) => {
     const [wrongGuess, setWrongGuess] = useState(0)
     const [showMenu, setShowMenu] = useState(false)
     const [youWon, setWon] = useState(false)
+    const [healthBar, setHealthBar] = useState(180)
+    const [smbar, setSmBar] = useState(150)
    
     
 
@@ -144,6 +146,8 @@ const GameZone = ({type,data}) => {
             handleWinCondition()
         }else{
 
+            setHealthBar(prev => prev - 22.5)
+            setSmBar(prev => prev - 18.75)
             setWrongGuess(prev => prev + 1)
             
         }
@@ -155,7 +159,15 @@ const GameZone = ({type,data}) => {
 
 
         if(letter === " "){
-            return <div style={{width : 112, height : 126}}></div>
+            return (<div>
+
+                <div className="d-none d-lg-block" style={{width : 112, height : 126}}>
+
+                </div>
+                <div className="d-lg-none" style={{width: 40, height :66}}>
+
+                </div>
+            </div>)
         }else{
             return <WordTile letter={letter} found={lol}/>
         }
@@ -174,6 +186,8 @@ const GameZone = ({type,data}) => {
         setRestart(prev => prev +1)
         setWrongGuess(0)
         setWon(false)
+        setHealthBar(180)
+        setSmBar(150)
 
         let empty = new Map()
         setLol(empty)
@@ -191,19 +205,29 @@ const GameZone = ({type,data}) => {
             
 
                 <div className="d-flex justify-content-between">
-                    <div>
-                        <div onClick={handleMenu}>
-                        <img src={Menu}/>
+                    <div className="d-flex">
+                        <div className="me-3 buffer" onClick={handleMenu}>
+                        <img className="heart" src={Menu}/>
                         </div>
                        
 
-                        <h2 className="text-white">{type}</h2>
+                        <h2 className="text-white title">{type}</h2>
                     </div>
 
+                    <div className="d-flex">
+
+                        <div className="healthBarCapsule me-3">
+                            <div className="healthBar d-none d-lg-block" style={{width : healthBar}}>
+
+                            </div>
+                            <div className="healthBar d-lg-none" style={{width : smbar}}>
+
+                                </div>
+                        </div>
                     <div>
-
-
-                        <img src={Heart}/>
+                        <img className="heart" src={Heart}/>
+                        </div>
+                        
                     </div>
                 </div>
 
