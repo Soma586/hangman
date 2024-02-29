@@ -18,7 +18,7 @@ const CardType = ({type}) => {
     map.set("Movies", '/category/movies')
     map.set("TV Shows", '/category/shows')
     map.set('Countries', '/category/countries')
-    map.set('Captial Cities', '/category/cities')
+    map.set('Capital Cities', '/category/cities')
     map.set('Animals', '/category/animals')
     map.set('Sports', '/category/sports')
 
