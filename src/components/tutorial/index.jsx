@@ -5,14 +5,6 @@ import {Link} from 'react-router-dom'
 
 
 
-interface CardProps {
-
-    id: string;
-    title : string;
-    desc : string;
-}
-
-
 
 export const Nav = ({title}) => {
 
@@ -32,7 +24,7 @@ export const Nav = ({title}) => {
     )
 }
 
-const Card = ({title, id, desc}: CardProps) => {
+const Card = ({title, id, desc}) => {
 
 
 
@@ -51,7 +43,7 @@ const Card = ({title, id, desc}: CardProps) => {
 const Tutorial = () => {
 
 
-    const data: CardProps[] = [
+    const data = [
         {
             id: '01',
             title : 'CHOOSE A CATEGORY',

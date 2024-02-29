@@ -1,5 +1,5 @@
 import Icon from '../../assets/images/logo.svg'
-import Menu from '../assets/images/icon-menu.svg'
+
 import PlayButton from '../../assets/images/icon-play.svg'
 //import Ico from '../../'
 import { Link } from 'react-router-dom'

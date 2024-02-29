@@ -4,10 +4,10 @@ import BackGround from './assets/images/background-desktop.svg'
 import Icon from './assets/images/logo.svg'
 import Menu from './assets/images/icon-menu.svg'
 import PlayButton from './assets/images/icon-play.svg'
-import Intro from './components/Intro/index.tsx';
-import Tutorial from './components/tutorial/index.tsx';
-import Category from './components/Category/index.tsx'
-import GameZone from './components/GameZone/index.tsx';
+import Intro from './components/Intro/index.jsx';
+import Tutorial from './components/tutorial/index.jsx';
+import Category from './components/Category/index.jsx'
+import GameZone from './components/GameZone/index.jsx';
 import {Routes, Route} from 'react-router-dom'
 import Data from './data.json'
 //import classnames

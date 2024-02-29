@@ -3,17 +3,13 @@ import _ from 'lodash'
 import './styles.scss'
 import {Link} from 'react-router-dom'
 import Back from '../../assets/images/icon-back.svg'
-import { Nav } from '../tutorial/index.tsx'
+import { Nav } from '../tutorial/index'
 
 
 
-interface CardTypesProps {
-
-    type : string
-}
 
 
-const CardType = ({type} : CardTypesProps) => {
+const CardType = ({type}) => {
 
 
     let map = new Map()

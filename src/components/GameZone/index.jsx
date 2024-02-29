@@ -79,10 +79,10 @@ const GameZone = ({type,data}) => {
 
         //console.log(data)
         
-        const randomWordObj: String = data[Math.floor(Math.random() * data.length)]
+        const randomWordObj = data[Math.floor(Math.random() * data.length)]
     
         //console.log(`random word is ${randomWord}`)
-        const Word :String[] = Array.from(randomWordObj['name'].toUpperCase())
+        const Word = Array.from(randomWordObj['name'].toUpperCase())
 
 
         const count = randomWordObj['name'].replace(/\s/g, '')
@@ -93,7 +93,7 @@ const GameZone = ({type,data}) => {
     }, [restart])
 
 
-    const letters : String[] = Array.from('ABCDEFGHIJKLMNOPQRSTUVWXYZ');
+    const letters = Array.from('ABCDEFGHIJKLMNOPQRSTUVWXYZ');
 
     const tracker = new Map()
     mainWord.forEach((char) => {
