@@ -1,3 +1,5 @@
+@import './scss/breakpoint.scss';
+
 .App {
   text-align: center;
 }
@@ -40,12 +42,21 @@
 
 .containerz {
 
-  position: relative;
-  background-image: url('./assets/images/background-desktop.svg');
+  /* position: relative; */
+  /* background-image: url('./assets/images/background-desktop.svg'); */
+
+
+  background-image: url('./assets/images/background-mobile.svg');
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
+  /* width: 800px; */
   /* height: 100%; */
+  @include breakpoint-lg {
+
+    //background-image: ;
+    background-image: url('./assets/images/background-desktop.svg');
+  }
 
 }
 

@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import './App.css';
+import './App.scss';
 import BackGround from './assets/images/background-desktop.svg'
 import Icon from './assets/images/logo.svg'
 import Menu from './assets/images/icon-menu.svg'
