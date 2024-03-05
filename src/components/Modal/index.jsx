@@ -12,12 +12,6 @@ const Modal = ({handleMenu, status, handleRestart = null }) => {
 
 
 
-
-    //const [show, setShow] = useState(false)
-
-    //console.log("GGGGGG")
-
-
     return (
         <div className="modal" tabIndex="-1" style={{ display: 'block' }}>
         <div className="modal-dialog modal-dialog-centered">
